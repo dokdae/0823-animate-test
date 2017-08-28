@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Test2</title>
+</head>
+<style>
+body {
+  background-color: #020c18;
+}
+
+.active  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: 2s test2 infinite ease-in-out;
+}
+
+@keyframes test2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.normal {
+  position: absolute;
+  top: 58px;
+  left: 55px;
+}
+
+.normal-button span{
+  position: absolute;
+  top: 80px;
+  left: 400px;
+  display: block;
+  width: 300px;
+  /*height: 40px;*/
+  background-color: tranparent;
+  color: #a8e9ff;
+  padding: 11px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #a8e9ff;
+  border-radius: 5px;
+}
+
+.active-button span{
+  position: absolute;
+  top: 80px;
+  left: 400px;
+  display: block;
+  width: 300px;
+  /*height: 40px;*/
+  background-color: tranparent;
+  color: #17a1ff;
+  padding: 11px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #17a1ff;
+  border-radius: 5px;
+  animation: 2s test2 infinite ease-in-out;
+}
+
+@keyframes test2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+</style>
+<body>
+  <div class="normal">
+    <img src="for wireframe/li-2-normal.png">
+  </div>
+  <div class="active">
+    <img src="for wireframe/active-test.png">
+  </div>
+  <div class="normal-button">
+    <span>커뮤니티 투표</span>
+  </div>
+  <div class="active-button">
+    <span>커뮤니티 투표</span>
+  </div>
+</body>
+</html>
