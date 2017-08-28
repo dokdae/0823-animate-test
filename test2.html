@@ -8,24 +8,40 @@
 body {
   background-color: #020c18;
 }
+.shadow {
+  position: absolute;
+  top: 58px;
+  right: 200px;
+  /*box-shadow: 10px 10px 20px rgba(23, 161, 255, 0.6);*/
+}
 
+.shadow-box {
+
+  z-index: -1;
+  position: absolute;
+  top: 96px;
+  right: 250px;
+  width: 230px;
+  height: 86px;
+  animation: 1.8s neon-test infinite ease-in-out;
+}
+
+@keyframes neon-test {
+  0% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #17a1ff, 0 0 70px #17a1ff, 0 0 80px #17a1ff, 0 0 100px #17a1ff, 0 0 150px #17a1ff;
+  }
+  50% {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #17a1ff, 0 0 35px #17a1ff, 0 0 40px #17a1ff, 0 0 50px #17a1ff, 0 0 75px #17a1ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #17a1ff, 0 0 70px #17a1ff, 0 0 80px #17a1ff, 0 0 100px #17a1ff, 0 0 150px #17a1ff;
+  }
+}
 .active  {
   position: absolute;
   top: 0;
   left: 0;
   animation: 2s test2 infinite ease-in-out;
-}
-
-@keyframes test2 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .normal {
@@ -70,7 +86,6 @@ body {
   border-radius: 5px;
   animation: 2s test2 infinite ease-in-out;
 }
-
 @keyframes test2 {
   0% {
     opacity: 0;
@@ -96,6 +111,11 @@ body {
   </div>
   <div class="active-button">
     <span>커뮤니티 투표</span>
+  </div>
+  <div class="shadow">
+    <img src="for wireframe/li-2-normal.png">
+  </div>
+  <div class="shadow-box">
   </div>
 </body>
 </html>
